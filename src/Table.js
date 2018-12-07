@@ -5,10 +5,6 @@ import Header from './Header'
 import Title from './Title'
 
 export default class extends PureComponent {
-  static defaultProps = {
-    columns: null
-  }
-
   constructor () {
     super()
 
