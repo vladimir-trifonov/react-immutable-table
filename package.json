@@ -1,0 +1,24 @@
+{
+  "name": "react-immutable-table",
+  "version": "1.0.0",
+  "description": "react-immutable-table",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimir-trifonov/react-immutable-table.git"
+  },
+  "keywords": [
+    "react",
+    "immutable",
+    "table"
+  ],
+  "author": "Vladimir Trifonov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladimir-trifonov/react-immutable-table/issues"
+  },
+  "homepage": "https://github.com/vladimir-trifonov/react-immutable-table#readme"
+}
