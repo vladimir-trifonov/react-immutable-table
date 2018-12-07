@@ -1,6 +1,6 @@
 {
   "name": "react-immutable-table",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "react-immutable-table",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,8 @@
   "keywords": [
     "react",
     "immutable",
-    "table"
+    "table",
+    "react-immutable-table"
   ],
   "author": "Vladimir Trifonov",
   "license": "ISC",

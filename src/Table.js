@@ -3,8 +3,9 @@ import styles from './Table.module.css'
 import Row from './Row'
 import Header from './Header'
 import Title from './Title'
+import Search from './Search'
 
-export default class extends PureComponent {
+export default class Table extends PureComponent {
   constructor () {
     super()
 
@@ -21,20 +22,21 @@ export default class extends PureComponent {
   }
 
   render () {
-    const { items, columns, title, count } = this.props
-
-    if (!items || !count) return null
+    const { items, columns, title, count, renderControls, onSearch } = this.props
 
     return (
       <div className={styles.table}>
-        {title && <Title title={title} />}
+        {title && <Title title={title} renderControls={renderControls} />}
+        {onSearch && <Search onSearch={onSearch} />}
         <table>
           {columns && <Header columns={columns} />}
-          <tbody onClick={this.handleClick}>
-            {items.map((item, i) => (
-              <Row key={i} item={item} />
-            ))}
-          </tbody>
+          {!!count &&
+            <tbody onClick={this.handleClick}>
+              {items.map((item, i) => (
+                <Row key={i} item={item} />
+              ))}
+            </tbody>
+          }
         </table>
       </div>
     )
