@@ -32,25 +32,27 @@
   float: right;
 }
 
+.controls * {
+  color: rgba(25, 125, 81, 1);
+}
+
 .controls button {
   position: relative;
-  background-color: #4CAF50;
   border: none;
   text-align: center;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
   overflow: hidden;
   cursor: pointer;
   min-width: 20px;
-  background: transparent; 
-  color: rgba(25, 125, 81, 1);
+  padding: 2px 5px;
+  background: transparent;
   border: 1px solid #808080;
   text-decoration: none;
-  text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.controls-dark1 button {
+.controls-dark1 * {
   color: #4995c4;
 }
 

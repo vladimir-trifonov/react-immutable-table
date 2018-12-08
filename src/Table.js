@@ -36,7 +36,8 @@ export default class Table extends PureComponent {
 
     return (
       <div className={this.getStyles(styles, 'table')}>
-        {title && <Title getStyles={this.getStyles} title={title} renderControls={renderControls} />}
+        {(!!title || renderControls) && 
+          <Title getStyles={this.getStyles} title={title} renderControls={renderControls} />}
         {onSearch && <Search getStyles={this.getStyles} onSearch={onSearch} />}
         <table>
           {columns && <Header getStyles={this.getStyles} columns={columns} />}
