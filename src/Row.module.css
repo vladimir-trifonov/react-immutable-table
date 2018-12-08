@@ -9,3 +9,7 @@
   cursor: pointer;
   text-transform: uppercase;
 }
+
+.col-dark1 {
+  background-color: #1b262d;
+}

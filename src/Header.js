@@ -3,12 +3,12 @@ import styles from './Header.module.css'
 
 export default class extends PureComponent {
   render () {
-    const { columns } = this.props
+    const { columns, getStyles } = this.props
     return (
       <thead>
         <tr>
           {columns && columns.map((data, i) => (
-            <th key={i} className={styles.col}>
+            <th key={i} className={getStyles(styles, 'col')} >
               {data}
             </th>
           ))}

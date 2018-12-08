@@ -8,6 +8,11 @@
   flex-direction: column;
 }
 
+.table-dark1 {
+  background-color: #1b262d;
+  overflow-y: auto;
+}
+
 .table thead tr th {
   position: -webkit-sticky;
   position: sticky;
@@ -17,10 +22,6 @@
 
 .table tbody > tr > td {
   text-align: right;
-}
-
-.table tbody > tr > td:first-child {
-  text-align: left;
 }
 
 ::-webkit-scrollbar {

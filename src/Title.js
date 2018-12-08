@@ -3,14 +3,14 @@ import styles from './Title.module.css'
 
 export default class extends PureComponent {
   render () {
-    const { title, renderControls } = this.props
+    const { title, renderControls, getStyles } = this.props
     return (
-      <div className={styles['title-wrapper']}>
-        <span className={styles.title}>
+      <div className={getStyles(styles, 'title-wrapper')}>
+        <span className={getStyles(styles, 'title')}>
           {title}
         </span>
         {renderControls && 
-          <span className={styles.controls}>
+          <span className={getStyles(styles, 'controls')}>
             {renderControls()}
           </span>
         }

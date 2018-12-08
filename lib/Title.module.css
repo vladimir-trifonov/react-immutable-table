@@ -13,6 +13,14 @@
   min-height: 31px;
 }
 
+.title-wrapper-dark1 {
+  background-color: #1b262d;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  text-transform: none;
+}
+
 .title {
   position: absolute;
   left: 0;
@@ -42,6 +50,10 @@
   font-weight: 700;
 }
 
+.controls-dark1 button {
+  color: #4995c4;
+}
+
 .controls button:after {
   content: "";
   background: rgba(25, 125, 81, 1);
@@ -53,6 +65,10 @@
   margin-top: -120%;
   opacity: 0;
   transition: all 0.8s
+}
+
+.controls-dark1 button:after {
+  color: #4995c4;
 }
 
 .controls button:active:after {

@@ -8,3 +8,9 @@
   background-color: #222222;
   text-transform: uppercase;
 }
+
+.col-dark1 {
+  font-weight: 400;
+  color: #fff;
+  background-color: #121b21;
+}
