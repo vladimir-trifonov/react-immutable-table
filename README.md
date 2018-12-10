@@ -41,6 +41,7 @@ onClick             | Function(rowIndex, colIndex)      |         | Handle cell 
 count               | Integer                           |         | Items count.
 onSearch            | Function(query)                   |         | Handle search action.
 title               | String                            |         | The title of the table.
+theme               | String                            |         | The style of the table.
 
 ## License
 
